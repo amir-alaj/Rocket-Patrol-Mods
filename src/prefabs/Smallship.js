@@ -1,5 +1,5 @@
-//spaceship prefap
-class Spaceship extends Phaser.GameObjects.Sprite {
+//smallship prefap
+class Smallship extends Phaser.GameObjects.Sprite {
     constructor(scene, x, y, texture, frame, pointValue, timeValue) {
         super(scene, x, y, texture, frame);
 
@@ -11,7 +11,7 @@ class Spaceship extends Phaser.GameObjects.Sprite {
 
     update() {
         //move spaceship left
-        this.x -= game.settings.spaceshipSpeed;
+        this.x -= game.settings.smallshipSpeed;
         // wraparound screen bounds
         if (this.x <= 0 - this.width) {
             this.reset();
